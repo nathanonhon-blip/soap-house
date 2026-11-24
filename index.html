@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5eee5">
+  <title>SOAP HOUSE | สบู่ธรรมชาติ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">S</span><span>SOAP HOUSE<small>EVERYDAY NATURAL CARE</small></span></a>
+  <nav><a href="#products">สินค้า</a><a href="#story">เกี่ยวกับเรา</a><button class="nav-cart" id="cart-open">ตะกร้า <b id="cart-count">0</b></button><button class="admin-link" id="admin-open">จัดการออเดอร์</button></nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy"><p class="eyebrow">A LITTLE CARE, EVERY DAY</p><h1>ผิวสะอาด<br><em>เริ่มต้นจากธรรมชาติ</em></h1><p>สบู่ก้อนแฮนด์เมดที่ใส่ใจทุกขั้นตอน คัดสรรส่วนผสมอย่างเรียบง่าย เพื่อช่วงเวลาดี ๆ ในทุกวัน</p><a class="primary-btn" href="#products">เลือกชมสินค้า <span>↗</span></a><div class="hero-note">SMALL BATCH · THOUGHTFULLY MADE</div></div>
+    <div class="hero-art"><div class="sun"></div><div class="soap soap-one"><span>SOAP<br>HOUSE</span></div><div class="soap soap-two"><span>PURE<br>BOTANICAL</span></div><div class="leaf leaf-a">✦</div><div class="leaf leaf-b">✧</div><div class="art-caption">NATURAL<br>DAILY RITUAL</div></div>
+  </section>
+  <section class="intro" id="story"><span class="eyebrow">OUR PHILOSOPHY</span><p>เราเชื่อว่าการดูแลตัวเองไม่จำเป็นต้องซับซ้อน<br>แค่เริ่มจากสิ่งเล็ก ๆ ที่ดีต่อผิวและดีต่อใจ</p></section>
+  <section class="products-section" id="products"><div class="section-heading"><div><span class="eyebrow">THE COLLECTION</span><h2>เลือกสบู่ก้อนโปรดของคุณ</h2></div><span class="muted">HANDMADE WITH CARE</span></div><div class="product-grid" id="product-grid"><div class="loading">กำลังโหลดสินค้า...</div></div></section>
+  <section class="promise"><div><b>01</b><span>ใส่ใจส่วนผสม</span><small>คัดสรรวัตถุดิบอย่างตั้งใจ</small></div><div><b>02</b><span>ทำอย่างพิถีพิถัน</span><small>ดูแลทุกขั้นตอนการผลิต</small></div><div><b>03</b><span>แพ็กด้วยความรัก</span><small>เตรียมทุกออเดอร์อย่างเรียบร้อย</small></div></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">S</span><span>SOAP HOUSE<small>EVERYDAY NATURAL CARE</small></span></a><span>© 2026 SOAP HOUSE · MADE WITH CARE</span></footer>
+<div class="overlay" id="cart-modal"><section class="drawer"><button class="close" data-close="cart-modal">×</button><span class="eyebrow">YOUR BAG</span><h2>ตะกร้าสินค้า</h2><div id="cart-items"></div><div class="cart-total"><span>ยอดรวม</span><b id="cart-total">฿0</b></div><form id="checkout-form"><h3>ข้อมูลสำหรับจัดส่ง</h3><input name="customer" placeholder="ชื่อผู้รับ" required><input name="phone" placeholder="เบอร์โทรศัพท์" required><textarea name="address" placeholder="ที่อยู่จัดส่ง" required></textarea><button class="primary-btn full" type="submit">ยืนยันคำสั่งซื้อ <span>↗</span></button></form><p class="tiny">* คำสั่งซื้อจะถูกบันทึกเมื่อเชื่อมต่อ Google Sheets แล้ว</p></section></div>
+<div class="overlay" id="admin-modal"><section class="drawer admin-drawer"><button class="close" data-close="admin-modal">×</button><span class="eyebrow">ORDER MANAGEMENT</span><h2>จัดการคำสั่งซื้อ</h2><div class="admin-login" id="admin-login"><p>กรอกรหัสผู้ดูแลเพื่อดูรายการหยิบและแพ็กสินค้า</p><input id="admin-key" type="password" placeholder="Admin key"><button class="primary-btn full" id="admin-login-btn">เข้าสู่ระบบ</button></div><div id="admin-content" hidden><div class="admin-tools"><button id="refresh-orders">รีเฟรช</button><span id="order-count"></span></div><div id="orders-list"></div></div></section></div>
+<div class="toast" id="toast"></div>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
