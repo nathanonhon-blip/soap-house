@@ -1,4 +1,4 @@
 window.APP_CONFIG = {
-  API_URL: "https://script.google.com/macros/library/d/1zs9apCiTSSEHmma-XjUsVGR6oEBggX_6JvRpeoFaB9uTDDAmS954GFDp/1",
+  API_URL: "https://script.google.com/macros/s/AKfycbxymm2hCvlf-IsvemF9xlwUC3aMuRibjX2qxK2gnyYn9LOreFodWlt0GfkcnYakQ__n/exec",
   CURRENCY: "฿"
 };
